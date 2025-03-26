@@ -1,1 +1,1 @@
-redis:v7.4
+redis:7.4.0
