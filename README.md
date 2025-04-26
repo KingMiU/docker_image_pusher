@@ -22,9 +22,9 @@
 
 ### Fork本项目
 Fork本项目<br>
-#### 启动Action
+### 启动Action
 进入您自己的项目，点击Action，启用Github Action功能<br>
-#### 配置环境变量
+### 配置环境变量
 进入Settings->Secret and variables->Actions->New Repository secret
 
 将上一步的**四个值**<br>
@@ -41,14 +41,7 @@ ALIYUN_NAME_SPACE,ALIYUN_REGISTRY_USER，ALIYUN_REGISTRY_PASSWORD，ALIYUN_REGIS
 
 ### 使用镜像
 回到阿里云，镜像仓库，点击任意镜像，可查看镜像状态。(可以改成公开，拉取镜像免登录)
-
-在国内服务器pull镜像, 例如：<br>
-```
-docker pull registry.cn-hangzhou.aliyuncs.com/shrimp-images/alpine
-```
-registry.cn-hangzhou.aliyuncs.com 即 ALIYUN_REGISTRY(阿里云仓库地址)<br>
-shrimp-images 即 ALIYUN_NAME_SPACE(阿里云命名空间)<br>
-alpine 即 阿里云中显示的镜像名<br>
+阿里云会给出拉取镜像的指令代码。
 
 ### 多架构
 需要在images.txt中用 --platform=xxxxx手动指定镜像架构
