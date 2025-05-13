@@ -20,24 +20,24 @@
 
 
 
-## Fork本项目
+### Fork本项目
 Fork本项目<br>
-#### 启动Action
-进入本项目，点击Action，启用Github Action功能<br>
-#### 配置环境变量
-进入Settings->Secret and variables->Actions->New Repository secret
-
-将上一步的**四个值**<br>
-ALIYUN_NAME_SPACE,ALIYUN_REGISTRY_USER，ALIYUN_REGISTRY_PASSWORD，ALIYUN_REGISTRY<br>
-配置成环境变量
-
-#### 添加镜像
-打开images.txt文件，添加你想要的镜像 
-可以加tag，也可以不用(默认latest)<br>
-可添加 --platform=xxxxx 的参数指定镜像架构<br>
-可使用 k8s.gcr.io/kube-state-metrics/kube-state-metrics 格式指定私库<br>
-可使用 #开头作为注释<br>
-文件提交后，自动进入Github Action构建
+  #### 启动Action
+  进入本项目，点击Action，启用Github Action功能<br>
+  #### 配置环境变量
+  进入Settings->Secret and variables->Actions->New Repository secret
+  
+  将上一步的**四个值**<br>
+  ALIYUN_NAME_SPACE,ALIYUN_REGISTRY_USER，ALIYUN_REGISTRY_PASSWORD，ALIYUN_REGISTRY<br>
+  配置成环境变量
+  
+  #### 添加镜像
+  打开images.txt文件，添加你想要的镜像 
+  可以加tag，也可以不用(默认latest)<br>
+  可添加 --platform=xxxxx 的参数指定镜像架构<br>
+  可使用 k8s.gcr.io/kube-state-metrics/kube-state-metrics 格式指定私库<br>
+  可使用 #开头作为注释<br>
+  文件提交后，自动进入Github Action构建
 
 ### 使用镜像
 回到阿里云，镜像仓库，点击任意镜像，可查看镜像状态。(可以改成公开，拉取镜像免登录)
